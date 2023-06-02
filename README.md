@@ -17,6 +17,8 @@ Proyecto Final de 3er Semestre en [![My Skills](https://skillicons.dev/icons?i=p
 | ------------- | ------------- | ------------- |------------- |
 |<p align="center"><img src="https://avatars.githubusercontent.com/u/111471872?v=4" width=110 height=110></p><a href="https://github.com/matiasq3" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a><a href="https://www.linkedin.com/mwlite/in/matias-orlando-quispe-nina-1b973557" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>|<p align="center"><img src="https://avatars.githubusercontent.com/u/112651847?v=4" width=110 height=110></p><a href="https://github.com/DeisyOrtega" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a><a href="https://www.linkedin.com/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |<p align="center"><img src="https://avatars.githubusercontent.com/u/111830259?v=4" width=110 height=110></p><a href="https://github.com/Marialrodriguez1991" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>  <a href="https://www.linkedin.com/in/maria-lorena-rodriguez-4893b4274" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>|<p align="center"><img src="https://avatars.githubusercontent.com/u/77170481?v=4" width=110 height=110></p><a href="https://github.com/YamiCarlucci" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>  <a href="https://www.linkedin.com/in/yamila-carlucci/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>|
 
+
+
 # Metodología de trabajo
 
 Utilizamos la metodología de trabajo mixta entre Scrum y Kanban, nos manejaremos con un tablero de trabajo que tendrá distintas columnas por estado.
@@ -33,6 +35,8 @@ Las columnas tendrán los siguientes estados:
 :stop_sign: BLOCKED: Aquellas tareas que están bloqueadas
 
 :thumbsup: DONE: Las tareas finalizadas
+
+
 
 #WORKFLOW:
 
