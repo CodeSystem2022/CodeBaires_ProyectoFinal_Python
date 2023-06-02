@@ -7,6 +7,14 @@
 
 Proyecto Final de 3er Semestre en [![My Skills](https://skillicons.dev/icons?i=py)](https://skillicons.dev) 
 
+Se utilizará Python 3.11 como intérprete
+
+Librerías:
+- Tkinter (Para realizar la interfaz gráfica o GUI)
+- PIL (Pillow) (para abrir, manipular y guardar distintos formatos de imágenes)
+- Sqlite3 (Para acceder a una base de datos SQLite)
+
+
 # Team: 
 
 | Rosalia Lotierzo  | Marina Falcón |Emmanuel Toro |Maia Strusiat |
