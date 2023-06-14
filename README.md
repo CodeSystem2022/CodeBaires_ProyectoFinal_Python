@@ -68,15 +68,14 @@ Las columnas tendrán los siguientes estados:
 #WORKFLOW:
 
 Contaremos con la rama main y la rama test.
-Poor cada card (issue) correspondiente a la tarea asignada se creará una rama que luego de finalizada será commiteada, pusheada y se realizará un pull request para mergear a la rama test.
+Por cada card (issue) correspondiente a la tarea asignada se creará una rama que luego de finalizada será commiteada, pusheada y se realizará un pull request para mergear a la rama test.
 El issue será testeado y una vez realizado esto se mergeará mediante un pull request a la rama main.
 
 
-Las ramas serán nombradas con el nombre de cada issue. Ej: Mc_UTN-Creación de clase
-
+Las ramas serán nombradas con el nombre de cada issue. Ej: Mc_UTN_Python_{Nombre_de_clase}
 El nombre del issue se genera con la siguiente nomenclatura:
 
-MC_UTN-[Nombre_de_clase o metodo a generar]
+Mc_UTN_Python_{Nombre_de_clase}
 
 Cada issue tiene asignado:
 - Título (De acuerdo a la nomenclatura antes descrita)
