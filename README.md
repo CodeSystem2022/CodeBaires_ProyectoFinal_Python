@@ -14,7 +14,26 @@ Librerías:
 - PIL (Pillow) (para abrir, manipular y guardar distintos formatos de imágenes)
 - Sqlite3 (Para acceder a una base de datos SQLite)
 
+## Primeros pasos 👣
+- Clonar repositorio 
+- Abrir proyecto en PyCharm
+- Agregar intérprete de python (Se está usando la versión 3.11)
 
+- Activar  el virtual environment usando el siguiente comando en la terminal de Pycharm:
+```bash
+  source venv/bin/activate
+```
+- Instalar los requerimientos usando el siguiente comando en la terminal de Pycharm:
+```bash
+  pip install -r requirements.txt
+```
+
+- Usar este comando en la terminal de Pychharm  para hacer el upgrade de pip:
+```bash
+  pip install -U pip
+```
+
+Este proyecto se ejecuta desde main.py que está dentro de la carpeta test
 # Team: 
 
 | Rosalia Lotierzo  | Marina Falcón |Emmanuel Toro |Maia Strusiat |
