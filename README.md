@@ -34,6 +34,26 @@ Librerías:
 ```
 
 Este proyecto se ejecuta desde main.py que está dentro de la carpeta test
+
+* Usuarios para ingresar a la app:
+
+username: maia.s / password: codebaires
+
+username: rosalia.l / password: codebaires
+
+username: marina.f / password: codebaires
+
+username: matias.q / password: codebaires
+
+username: lorena.r / password: codebaires
+
+username: emmanuel.t / password: codebaires
+
+username: yamila.c / password: codebaires
+
+username: ariel.b / password: codebaires
+
+
 # Team: 
 
 | Rosalia Lotierzo  | Marina Falcón |Emmanuel Toro |Maia Strusiat |
