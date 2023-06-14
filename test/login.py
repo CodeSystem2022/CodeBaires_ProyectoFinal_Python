@@ -10,19 +10,25 @@ import sqlite3
 # trabajar con imágenes
 from PIL import ImageTk, Image
 
+# Esta clase se encargará de manejar la ventana de inicio de sesión que aparecerá apenas se abra nuestra
+# aplicación
+# Se encargará de verificar las credenciales ingresadas por el usuario en una base de datos SQLite
+# y mostrará mensajes de error o abrirá la aplicación principal según el resultado.
 class Login:
     # Esta variable la utilizaremos para almacenar la ventana de inicio de sesión más adelante
     login_window = None  # Definimos la variable login_window como global y le agregamos el valor None
 
     # La función verify_credentials se utiliza para verificar las credenciales de inicio de sesión
     # en una base de datos SQLite que previamente creamos y se encuentra en nuestro proyecto como database.sql
+    # Toma dos parámetros: username (nombre de usuario) y password (contraseña)
     def verify_credentials(username, password):
 
-        # Establecemose una conexión con la base de datos,
+        # Establecemos una conexión con la base de datos,
         conn = sqlite3.connect('database.db')
+        # Creamos un cursor para ejecutar consultas en la base de datos.
         cursor = conn.cursor()
 
-        # Verificar las credenciales en la base de datos
+        # Verificamos las credenciales en la base de datos
         # Ejecutamos una consulta para buscar las credenciales proporcionadas en la tabla de usuarios
         cursor.execute("SELECT * FROM usuarios WHERE username = ? AND password = ?", (username, password))
         # Obtenemos el resultado y se lo asignamos a la variable result
