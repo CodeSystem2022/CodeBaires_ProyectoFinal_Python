@@ -49,6 +49,7 @@ class Login:
 
 
     def show_login(self=None):
+
         # Declaramos la variable login_window como global para que pueda ser accedida y modificada dentro de la función
         global login_window  # Acceder a la variable login_window global
         def iniciar_sesion():
