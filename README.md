@@ -49,6 +49,8 @@ username: lorena.r / password: codebaires
 
 username: emmanuel.t / password: codebaires
 
+username: deisy.o / password: codebaires
+
 username: yamila.c / password: codebaires
 
 username: ariel.b / password: codebaires
