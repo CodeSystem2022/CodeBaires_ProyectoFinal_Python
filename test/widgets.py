@@ -133,7 +133,7 @@ class Widgets:
         orderTransactionLabel = ttk.Label(orderFrame, style='orderTransaction.TLabel')
         orderTransactionLabel.grid(row=2, column=0, sticky='NSEW')
 
-        # # Etiqueta de Total del Pedido
+        # Etiqueta de Total del Pedido
         orderTotalLabel = ttk.Label(orderFrame, text='TOTAL: $0', style='orderTotal.TLabel')
         orderTotalLabel.grid(row=3, column=0, sticky='EW')
 
