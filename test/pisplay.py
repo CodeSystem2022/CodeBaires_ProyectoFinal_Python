@@ -13,8 +13,7 @@ class Display:
             relief='sunken', # le asigna al marco o frame que va a contener este item un relieve hundido
             style='selectedDish.TFrame' # le asigna el estilo configurado en la clase style para selectedDish que sería el item seleccionado
         )
-
-                                    
+                               
         #  Configuramos el estilo del resto de los otros marcos
         #  para asegurarnos de que solo el marco correspondiente esté distinto
         comboBurguerVeggieFrame.configure(style='DishFrame.TFrame')
@@ -43,8 +42,6 @@ class Display:
             compound='bottom',
             padding=(2, 2, 2, 2)
         )
-
-
 
     def displayComboBurguerVeggie(comboBurguerBaconFrame, comboBurguerVeggieFrame, comboBurguerClasicaFrame, comboBurguerEspecialFrame,
                                 capuccinoFrame, espressoFrame, latteFrame, muffinArandanoFrame, muffinChipsFrame, muffinChocolateFrame,
@@ -83,7 +80,6 @@ class Display:
             compound='bottom',
             padding=(2, 2, 2, 2)
         )
-
 
     def displayComboBurguerClasica(comboBurguerBaconFrame, comboBurguerVeggieFrame, comboBurguerClasicaFrame, comboBurguerEspecialFrame,
                                 capuccinoFrame, espressoFrame, latteFrame, muffinArandanoFrame, muffinChipsFrame, muffinChocolateFrame,
@@ -200,7 +196,6 @@ def displayComboBurguerEspecial(comboBurguerBaconFrame, comboBurguerVeggieFrame,
             padding=(2, 2, 2, 2)
         )
 
-
  def displayEspresso(comboBurguerBaconFrame, comboBurguerVeggieFrame, comboBurguerClasicaFrame, comboBurguerEspecialFrame,
                                 capuccinoFrame, espressoFrame, latteFrame, muffinArandanoFrame, muffinChipsFrame, muffinChocolateFrame,
                                 displayLabel, images):
@@ -277,7 +272,6 @@ def displayComboBurguerEspecial(comboBurguerBaconFrame, comboBurguerVeggieFrame,
             compound='bottom',
             padding=(2, 2, 2, 2)
         )
-
 
     def displayMuffinArandano(comboBurguerBaconFrame, comboBurguerVeggieFrame, comboBurguerClasicaFrame, comboBurguerEspecialFrame,
                                 capuccinoFrame, espressoFrame, latteFrame, muffinArandanoFrame, muffinChipsFrame, muffinChocolateFrame,
