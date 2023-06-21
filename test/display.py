@@ -120,7 +120,7 @@ class Display:
             padding=(2, 2, 2, 2)
         )
 
-def displayComboBurguerEspecial(comboBurguerBaconFrame, comboBurguerVeggieFrame, comboBurguerClasicaFrame, comboBurguerEspecialFrame,
+    def displayComboBurguerEspecial(comboBurguerBaconFrame, comboBurguerVeggieFrame, comboBurguerClasicaFrame, comboBurguerEspecialFrame,
                                 capuccinoFrame, espressoFrame, latteFrame, muffinArandanoFrame, muffinChipsFrame, muffinChocolateFrame,
                                 displayLabel, images):
         # Instanciamos la imagen correspondiente al item del menú, la traemos de images.py
@@ -196,7 +196,7 @@ def displayComboBurguerEspecial(comboBurguerBaconFrame, comboBurguerVeggieFrame,
             padding=(2, 2, 2, 2)
         )
 
- def displayEspresso(comboBurguerBaconFrame, comboBurguerVeggieFrame, comboBurguerClasicaFrame, comboBurguerEspecialFrame,
+    def displayEspresso(comboBurguerBaconFrame, comboBurguerVeggieFrame, comboBurguerClasicaFrame, comboBurguerEspecialFrame,
                                 capuccinoFrame, espressoFrame, latteFrame, muffinArandanoFrame, muffinChipsFrame, muffinChocolateFrame,
                                 displayLabel, images):
         # Instanciamos la imagen correspondiente al item del menú, la traemos de images.py
