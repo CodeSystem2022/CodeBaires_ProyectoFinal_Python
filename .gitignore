@@ -3,3 +3,4 @@ test/__pycache__/
 ticket_order/*.txt
 .pytest_cache
 *.pyc
+*.txt
