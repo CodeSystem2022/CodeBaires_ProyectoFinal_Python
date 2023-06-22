@@ -1,5 +1,5 @@
 __pycache__/
 test/__pycache__/
-ticket_order/
+ticket_order/*.txt
 .pytest_cache
 *.pyc
