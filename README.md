@@ -19,10 +19,6 @@ Librerías:
 - Abrir proyecto en PyCharm
 - Agregar intérprete de python (Se está usando la versión 3.11)
 
-- Activar  el virtual environment usando el siguiente comando en la terminal de Pycharm:
-```bash
-  source venv/bin/activate
-```
 - Instalar los requerimientos usando el siguiente comando en la terminal de Pycharm:
 ```bash
   pip install -r requirements.txt
