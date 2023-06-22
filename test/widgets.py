@@ -284,6 +284,5 @@ class Widgets:
         # Se define tmb su ubicación, nombre y estilo
         # Este botón sirve para generar el ticket del pedido
         orderButton = ttk.Button(orderFrame, text='PEDIR',
-                                 command=lambda: Order.order(orderTransactionLabel, orderIDLabel,
-                                                             orderTransactionLabel))
+                                 command=lambda: Order.order(orderIDLabel, orderTransactionLabel, orderTotalLabel))
         orderButton.grid(row=4, column=0, sticky='EW')
