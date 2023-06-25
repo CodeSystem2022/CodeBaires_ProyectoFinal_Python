@@ -86,15 +86,14 @@ class Order:
             updated_total = int(order_total) - Order.prices[displayLabel.cget('text')]
             orderTotalLabel.configure(text='TOTAL: $' + str(updated_total))
 
-
     # Función para generar un id único para el pedido
     # Genera un ID único para el pedido al combinar letras y números aleatorios y agregar un prefijo específico
     # Este ID se utilizará para identificar de manera única cada pedido realizado.
     def order_id(self=None):
         # Creamos una lista con numeros y otra con letras
         numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        letters = ['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
-                  'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+        letters = ['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                   'V', 'W', 'X', 'Y', 'Z']
 
         # Inicializamos la variable order_id_name con el valor inicial "McUTN_".
         # Esta variable almacenará el ID del pedido generado
@@ -105,7 +104,7 @@ class Order:
         random_letters = ''
         random_numbers = ''
 
-        for i in range(0, 3):  # Elegimos 3 letras y 3 números, podría ser la extensión que quisiéramos
+        for i in range(0, 3): # Elegimos 3 letras y 3 números, podría ser la extensión que quisiéramos
             # Se selecciona aleatoriamente una letra de la lista letters
             # utilizando la función random.choice(letters)
             # La letra seleccionada se agrega a la variable random_letters utilizando el operador +=
@@ -130,8 +129,9 @@ class Order:
     def order(orderIDLabel, orderTransactionLabel, orderTotalLabel):
         # Obtenemos el texto actual del widget orderIDLabel y lo asignamos a la variable new_ticket.
         new_ticket = orderIDLabel.cget('text')
+
         # Eliminamos el prefijo "Id. Pedido: " del texto de new_ticket utilizando el método replace.
-        new_ticket = new_ticket.replace('Id. Pedido: ', '')
+        new_ticket = new_ticket. replace('Id. Pedido: ','')
         # Creo una lista y hago un split desde lo último que está escrito en cada item de la orden
         transaction_list = orderTransactionLabel.cget('text').split('.-\n')
         # Utilizamos pop para que no nos quede ('.- ') después de hacer la eliminación del elemento
@@ -149,27 +149,27 @@ class Order:
         # Ruta donde voy a guardar mi archivo ticket
         file_path = f'./ticket_order/{new_ticket}.txt'
         # Utilizamos with para abrir y escribir en el archivo que vamos a generar para guardar nuestro ticket
-        with open(file_path, 'w') as file:  # Le paso el nombre que va a tener el recibo
+        with open(file_path, 'w') as file: # Le paso el nombre que va a tener el recibo
             file.write('----------------------------------------------------------')
             file.write('\n')  # Salto de línea
             file.write('                          Mc UTN                          ')
-            file.write('\n')  # Salto de línea
+            file.write('\n') # Salto de línea
+            file.write('----------------------------------------------------------')
+            file.write('\n') # Salto de línea
+            file.write(order_day.strftime('%d/%m/%Y')) # Lo formateamos para que quede dd/mm/YYYY
+            file.write('\n') # Salto de línea
+            file.write(order_time.strftime('%H:%M:%S')) # Lo formateamos para que quede HH/MM/SS
+            file.write('\n\n') # Doble salto de línea
+            for item in transaction_list: # Agregamos todos los items del pedido
+                file.write(item + '\n')
+            file.write('\n\n')  # Doble salto de línea
             file.write('----------------------------------------------------------')
             file.write('\n')  # Salto de línea
-            file.write(order_day.strftime('%d/%m/%Y'))  # Lo formateamos para que quede dd/mm/YYYY
+            file.write(orderTotalLabel.cget('text'))
             file.write('\n')  # Salto de línea
-            file.write(order_time.strftime('%H:%M:%S'))  # Lo formateamos para que quede HH/MM/SS
-            file.write('\n\n')  # Doble salto de línea
-            for item in transaction_list:  # Agregamos todos los items del pedido
-                file.write(item + '\n')
-                file.write('\n\n')  # Doble salto de línea
-                file.write('----------------------------------------------------------')
-                file.write('\n')  # Salto de línea
-                file.write(orderTotalLabel.cget('text'))
-                file.write('\n')  # Salto de línea
-                file.write('----------------------------------------------------------')
+            file.write('----------------------------------------------------------')
 
         # Actualizamos el mensaje de generación de archivo
         orderTransactionLabel.configure(text=f'Se generó tu ticket\n Id: {new_ticket}',
-                                                font=('Franklin Gothic', 12, 'bold'),
-                                                anchor='center')
+                                        font=('Franklin Gothic', 12, 'bold'),
+                                        anchor='center')
