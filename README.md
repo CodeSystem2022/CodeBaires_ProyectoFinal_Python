@@ -24,9 +24,9 @@ Librerías:
   pip install -r requirements.txt
 ```
 
-- Usar este comando en la terminal de Pychharm  para hacer el upgrade de pip:
+- Usar este comando en la terminal de Pycharm  para hacer el upgrade de pip:
 ```bash
-  pip install -U pip
+  python.exe -m pip install --upgrade pip
 ```
 
 Este proyecto se ejecuta desde main.py que está dentro de la carpeta test
