@@ -21,6 +21,8 @@ Ingresar a nuestra Wiki, allí documentamos todo el proceso
 
 [Wiki](https://github.com/CodeSystem2022/CodeBaires_ProyectoFinal_Python/wiki)
 
+[Video Explicativo del Proyecto](https://drive.google.com/file/d/14q_UOz-0zGowHrkGiSyVIi7G3Z7FMXie/view?usp=sharing)
+
 
 
 ## Primeros pasos 👣
@@ -39,6 +41,8 @@ Ingresar a nuestra Wiki, allí documentamos todo el proceso
 ```
 
 Este proyecto se ejecuta desde main.py que está dentro de la carpeta test
+
+
 
 
 
